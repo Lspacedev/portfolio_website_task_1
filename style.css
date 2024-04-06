@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    font-size: 1.07em;
+    font-family: 'Courier New', Courier, monospace;
+  
+    
+}
+
+.logo {
+    margin-left: 15px;
+   
+}
+
+.menu {
+    margin-right: 100px;
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    
+}
+
+.logo > img {
+    width: 75px;
+    height: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.current {
+    border-bottom: 2px solid black;
+}
+
+.video {
+    padding: 50px 5px 50px 5px;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.video > iframe {
+    width: 95%;
+    height: 450px;
+}
+
+.bio {
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+ 
+    margin: 10px 100px 10px  100px;
+}
+
+.bio-info {
+    
+        
+}
+.bio-info> h1 {
+    text-align: center;
+}
+
+.bio-info > p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+footer {
+    height: 250px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.map > iframe {
+    width: 320px;
+    height: 175px;
+}
