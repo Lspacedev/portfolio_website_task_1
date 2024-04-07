@@ -2,12 +2,17 @@ body {
     margin: 0;
 }
 
+/*#F0EC57;
+#0B0A07;*/
+
 .navigation {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
     font-size: 1.07em;
     font-family: 'Courier New', Courier, monospace;
+    color: #0B0A07;
+  
   
     
 }
@@ -38,7 +43,7 @@ a {
 }
 
 .current {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #F0EC57;
 }
 
 .video {
@@ -55,44 +60,163 @@ a {
 }
 
 .bio {
+    padding: 50px 0 50px 0;
     height: 450px;
     display: flex;
     justify-content: space-between;
  
     margin: 10px 100px 10px  100px;
+    
 }
 
 .bio-info {
-    
+    font-family: 'Courier New', Courier, monospace;
         
 }
 .bio-info> h1 {
     text-align: center;
+    font-size: 4em;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .bio-info > p {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-style: italic;
 }
 
-.photo {
+.photo > img {
     width: 250px;
     height: 250px;
-    background-color: lightgray;
-    border: 1px solid black;
+    border-radius: 50%;
 }
 
 footer {
     height: 250px;
-    border: 1px solid black;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    border-top: 2px solid #F0EC57;
+    background-color: #0B0A07;
+
+    color: white;
     
 }
 
-.map > iframe {
-    width: 320px;
-    height: 175px;
+.address {
+    padding-bottom: 55px;
+    font-size: 1.07em;
+    margin-left: 15px
 }
+.links {
+    padding-bottom: 105px;
+}
+
+.links > a {
+    color: white;
+}
+
+.links> a:hover {
+    color: #F0EC57;
+}
+
+
+.map > iframe {
+    width: 300px;
+    height: 175px;
+    border-radius: 10%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+
+    margin-right: 25px;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+
+    margin-right: 25px;
+}
+
+.fa-instagram {
+    background: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+    color: white;
+}
+
+
+.about-info {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bio-info > p {
+    font-size: 1.5em;
+}
+
+.contact-form {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form {
+    border: 1px solid black;
+  
+    padding: 70px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+   
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #0B0A07;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #F0EC57;
+    color: #0B0A07;
+}
+
