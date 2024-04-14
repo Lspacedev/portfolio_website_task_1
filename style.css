@@ -1,5 +1,11 @@
+* {
+    font-family: 'Roboto';
+    
+}
 body {
     margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
 }
 
 
@@ -27,65 +33,76 @@ body {
 }
 
 .logo {
-    font-size: 1.5em;
-    color: #0B0A07;
-    font-weight: bold;
+
+    color:#b9b301;
+
     margin-left: 45px;
 }
+
 
 a {
     text-decoration: none;
     color: black;
 }
 
-.current {
-    border-bottom: 2px solid #F0EC57;
+.current > a {
+    color: #b9b301;
 }
 
 .video {
-    padding: 50px 5px 50px 5px;
+    padding: 50px 5px 5px 5px;
     
     display: flex;
     align-content: center;
     justify-content: center;
+
+   
+   
 }
 
 .video > iframe {
-    width: 95%;
+    width: 80%;
     height: 450px;
+    border: none;
 }
 
 .bio {
-    padding: 50px 0 50px 0;
+    padding: 70px 0 70px 0;
     height: 450px;
     display: flex;
-    justify-content: space-between;
- 
-    margin: 10px 100px 10px  100px;
+    justify-content: center;
+    gap: 200px;
+   
     
+ 
 }
 
 .bio-info {
-    font-family: 'Courier New', Courier, monospace;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-left: 45px;
+   
         
 }
-.bio-info> h1 {
-    text-align: center;
-    font-size: 4em;
-    font-weight: 200;
-    font-style: italic;
+
+.name {
+    color: #b9b301;
 }
 
-.bio-info > p {
-    text-align: center;
-    font-size: 1.5em;
-    font-style: italic;
+.btn {
+    width: 125px;
+    height: 50px;
+    background-color: #b9b301;
+    color: white;
+    border: none;
 }
+
 
 .photo > img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+   
 }
 
 footer {
