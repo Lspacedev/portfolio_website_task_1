@@ -15,10 +15,6 @@ body {
     
 }
 
-.logo {
-    margin-left: 15px;
-   
-}
 
 .menu {
     margin-right: 100px;
@@ -30,9 +26,11 @@ body {
     
 }
 
-.logo > img {
-    width: 75px;
-    height: 55px;
+.logo {
+    font-size: 1.5em;
+    color: #0B0A07;
+    font-weight: bold;
+    margin-left: 45px;
 }
 
 a {
