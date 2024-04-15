@@ -1,5 +1,7 @@
 * {
-    font-family: 'Roboto';
+    font-family: 'Roboto','Courier New',
+        Courier,
+        monospace;
     
 }
 body {
@@ -14,7 +16,7 @@ body {
     justify-content: space-between;
     padding-bottom: 5px;
     font-size: 1.07em;
-    font-family: 'Courier New', Courier, monospace;
+ 
     color: #0B0A07;
   
   
@@ -36,7 +38,7 @@ body {
 
     color:#b9b301;
 
-    margin-left: 45px;
+    margin-left: 110px;
 }
 
 
@@ -61,7 +63,7 @@ a {
 }
 
 .video > iframe {
-    width: 80%;
+    width: 90%;
     height: 450px;
     border: none;
 }
@@ -71,7 +73,7 @@ a {
     height: 450px;
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 150px;
    
     
  
@@ -80,21 +82,14 @@ a {
 .bio-info {
     line-height: 3.2rem;
     font-size: 2rem;
-    margin-left: 45px;
+    line-height: 80%;
+  
    
         
 }
 
 .name {
     color: #b9b301;
-}
-
-.btn {
-    width: 125px;
-    height: 50px;
-    background-color: #b9b301;
-    color: white;
-    border: none;
 }
 
 
@@ -189,16 +184,19 @@ footer {
 
     font-size: 1em;
     font-style: italic;
+
+    margin-top: 50px;
 }
 .bio-info > p {
     font-size: 1.5em;
 }
 
 .contact-form {
-    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
     
 }
 
@@ -257,7 +255,15 @@ input[type=submit]:hover {
   
 }
 
+.projects {
+    margin-bottom: 50px;
+}
+
 .projects > h2 {
+    text-align: center;
+}
+
+.projects > h4 {
     text-align: center;
 }
 
@@ -269,14 +275,14 @@ input[type=submit]:hover {
     align-content: center;
     gap: 1.7rem;
 
-    padding: 50px;
+    padding: 5px;
     
 }
 
 .card {
     border: 1px solid black;
     background-color: white;
-    padding: 25px;
+    padding: 15px;
 }
 
 
@@ -298,5 +304,90 @@ input[type=submit]:hover {
 }
 
 .contact-location {
+    margin-top: 20px;
     text-align: center;
+    font-weight: 300;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+     
+        font-size: 0.9em;
+        color: #0B0A07;
+
+    }
+
+
+    .video {
+        padding: 25px 2px 2px 2px;
+    }
+    .video>iframe {
+     
+        height: 250px;
+      
+    }
+
+    .bio {
+        padding: 35px 0 35px 0;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+
+
+
+    }
+
+    .bio-info {
+        line-height: 1.3rem;
+        font-size: 1rem;
+        line-height: normal;
+        
+    }
+    .photo > img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+
+    }
+    
+    footer {
+        height: 150px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        border-top: 2px solid #F0EC57;
+        background-color: #0B0A07;
+
+        color: white;
+
+    }
+
+    .address {
+        padding-bottom: 20px;
+        font-size: 0.9em;
+        margin-left: 7px
+    }
+    .map>iframe {
+        width: 150px;
+        height: 85px;
+        border-radius: 10%;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 15px;
+        width: 12px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+
+    }
 }
