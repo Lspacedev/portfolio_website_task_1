@@ -101,6 +101,7 @@ a {
 }
 
 footer {
+
     height: 250px;
 
     display: flex;
@@ -201,9 +202,16 @@ footer {
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
   
     padding: 70px;
+    width: 30%;
+    
+    max-width: 350px;
+   
+  
 }
 
 input[type=text],
@@ -213,22 +221,33 @@ textarea {
     padding: 12px;
    
     margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    margin-bottom: 10px;
+   
+}
+
+#message {
+    height: 100px;
+    resize: none;
 }
 
 input[type=submit] {
     background-color: #0B0A07;
     color: white;
     padding: 12px 20px;
+    margin-top: 5px;
     border: none;
     cursor: pointer;
+
 }
 
 input[type=submit]:hover {
     background-color: #F0EC57;
     color: #0B0A07;
 }
+.about-info, .education, .work, .projects {
+    height: 150px;
+}
+
 
 .education {
     text-align: center;
@@ -390,4 +409,14 @@ input[type=submit]:hover {
         border-radius: 50%;
 
     }
+}
+
+.error {
+   
+    padding: 0;
+    margin: 0 0 15px 0;
+    
+    font-size: 0.8rem;
+    color: #900;
+ 
 }
