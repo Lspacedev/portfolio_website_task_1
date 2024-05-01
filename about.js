@@ -59,14 +59,20 @@ function loadAboutInfo() {
     {
       name: "Calculator",
       link: "https://github.com/Lspacedev/calculator",
+      icon: `<i class="ri-calculator-fill"></i>`,
+      lang: "Html, css, Javascript",
     },
     {
       name: "Etch A Sketch",
       link: "https://github.com/Lspacedev/etch-a-sketch",
+      icon: `<i class="ri-paint-fill"></i>`,
+      lang: "Html, css, Javascript",
     },
     {
       name: "Restaurant Page",
       link: "https://github.com/Lspacedev/restaurant_page",
+      icon: `<i class="ri-restaurant-fill"></i>`,
+      lang: "Html, css, Javascript",
     },
   ];
 
@@ -74,13 +80,14 @@ function loadAboutInfo() {
     const project_card = document.createElement("div");
     project_card.classList.add("card");
 
-    project_card.innerHTML = `<div class="project-link"><a href="${project.link}">${project.name}</a></div>`;
+    project_card.innerHTML = `<div class="project-link"><a href="${project.link}">${project.icon}${project.name}<div class="lang"><h4>lang:</h4> ${project.lang}</div></a></div>`;
 
     cards.appendChild(project_card);
   });
 
   //address
   const address = document.querySelector(".address");
-  const myAddress = "22529 Mohama street";
+  const phone_number = "0791616960";
+  const myAddress = `<div>22529 Mohama street</div><div>Mamelodi</div><div>Pretoria</div><div>South Africa</div><div>${phone_number}</div>`;
   address.innerHTML = myAddress;
 }

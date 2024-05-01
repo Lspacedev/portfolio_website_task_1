@@ -1,3 +1,15 @@
+window.addEventListener("load", () => {
+  loadAddress();
+});
+
+function loadAddress() {
+  //address
+  const address = document.querySelector(".address");
+  const phone_number = "0791616960";
+  const myAddress = `<div>22529 Mohama street</div><div>Mamelodi</div><div>Pretoria</div><div>South Africa</div><div>${phone_number}</div>`;
+  address.innerHTML = myAddress;
+}
+
 async function handleFormSubmit(event) {
   event.preventDefault();
 

@@ -1,23 +1,25 @@
-* {
-    font-family: 'Roboto','Courier New',
-        Courier,
-        monospace;
-    
-}
 body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
+    
     font-size: 1.07em;
  
     color: #0B0A07;
+
+    background-color: #F0EC57;
+
+    position: sticky;
+    top: 0;
+    
   
   
     
@@ -31,15 +33,25 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 55px;
+
     
 }
 
-.logo {
+.menu > div > a {
+    text-transform: uppercase;
+}
 
-    color:#b9b301;
+.logo {
+    font-size: 1.4em;
+    font-family: "Anton",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0B0A07;
 
     margin-left: 110px;
 }
+
 
 
 a {
@@ -48,7 +60,7 @@ a {
 }
 
 .current > a {
-    color: #b9b301;
+    color: #4b4800;
 }
 
 .video {
@@ -69,23 +81,34 @@ a {
 }
 
 .bio {
-    padding: 70px 0 70px 0;
-    height: 450px;
+    padding: 70px 0 0 0;
+    height: 400px;
     display: flex;
     justify-content: center;
     gap: 150px;
    
-    
  
 }
 
 .bio-info {
-    line-height: 3.2rem;
+
     font-size: 2rem;
-    line-height: 80%;
-  
-   
+    line-height: 70%; 
         
+}
+
+.stacks {
+   text-align: center;
+
+   margin-bottom: 25px;
+}
+
+.stack-info {
+    font-size: 1.5em;
+}
+
+.stack-icons {
+    font-size: 4.2rem;
 }
 
 .name {
@@ -99,6 +122,8 @@ a {
     border-radius: 50%;
    
 }
+
+
 
 footer {
 
@@ -116,7 +141,7 @@ footer {
 }
 
 .address {
-    padding-bottom: 55px;
+    padding-bottom: 30px;
     font-size: 1.07em;
     margin-left: 15px
 }
@@ -139,13 +164,16 @@ footer {
     border-radius: 10%;
 }
 
+
 .fa {
     padding: 20px;
     font-size: 30px;
     width: 25px;
     text-align: center;
     text-decoration: none;
+
     border-radius: 50%;
+
     
 }
 
@@ -275,7 +303,7 @@ input[type=submit]:hover {
 }
 
 .projects {
-    margin-bottom: 50px;
+    margin-bottom: 110px;
 }
 
 .projects > h2 {
@@ -316,10 +344,26 @@ input[type=submit]:hover {
 
 .project-link {
     text-align: center;
+    
 }
 
 .project-link > a:hover {
     color: #b9b301;
+}
+
+.project-link > a > i {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+.lang {
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.lang > h4 {
+    font-style: normal;
 }
 
 .contact-location {
